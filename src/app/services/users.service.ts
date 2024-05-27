@@ -26,7 +26,7 @@ export class UsersService {
   }
 
   updateLocation(changeReason: string, newLocationId: string): Promise<void> {
-    return this.mockService.updateUser(this.userId,{
+    return this.mockService.updateUser(this.userId, {
       locationChangeReason: changeReason,
       locationId: newLocationId,
     });
