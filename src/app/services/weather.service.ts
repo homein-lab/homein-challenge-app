@@ -3,7 +3,7 @@ import { Observable } from 'rxjs';
 import { MockService } from './mock.service';
 
 export interface Weather {
-  currentTemperature:  number;
+  currentTemperature: number;
   cityId: string;
   id: string;
 }
