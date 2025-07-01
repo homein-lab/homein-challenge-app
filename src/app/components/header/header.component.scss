@@ -1,0 +1,22 @@
+header {
+  background-color: #f8f8f8;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #333333;
+    margin-left: 20px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
