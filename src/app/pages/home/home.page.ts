@@ -4,13 +4,12 @@ import { Subscription } from 'rxjs';
 import { User, UsersService } from '../../services/users.service';
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [
-    DecimalPipe
-  ],
-  templateUrl: './home.page.html',
-  styleUrl: './home.page.scss'
+    selector: 'app-home',
+    imports: [
+        DecimalPipe
+    ],
+    templateUrl: './home.page.html',
+    styleUrl: './home.page.scss'
 })
 export class HomePage implements OnInit, OnDestroy {
   user: User | null = null;
