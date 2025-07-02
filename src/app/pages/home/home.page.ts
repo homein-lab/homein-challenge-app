@@ -6,7 +6,7 @@ import { User, UsersService } from '../../services/users.service';
 @Component({
   selector: 'app-home',
   imports: [
-      DecimalPipe
+    DecimalPipe
   ],
   templateUrl: './home.page.html',
   styleUrl: './home.page.scss'
