@@ -5,7 +5,6 @@ import { User, UsersService } from '../../services/users.service';
 
 @Component({
   selector: 'app-home',
-  standalone: true,
   imports: [
     DecimalPipe
   ],
