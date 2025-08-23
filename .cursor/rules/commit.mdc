@@ -1,0 +1,38 @@
+---
+description: Defines basic interaction rules for commits
+alwaysApply: true
+---
+
+# Commits
+
+- Never push directly to `develop`, `staging` or `master` branches.
+- Never push with the `--force` flag.
+- Never commit and push credentials, secrets or sensitive data like API keys, passwords, service accounts, private keys, etc.
+- Never commit and push large files, like images, videos, etc.
+- Never commit and push generated files, like `node_modules`, `dist`, `build`, etc.
+- Every commit message should use the following format:
+
+```<type>(scope): <subject>```
+
+Types:
+
+- `feat`: new feature for the user, not a new feature for build script
+- `fix`: bug fix for the user, not a fix to a build script
+- `docs`: changes to the documentation
+- `style`: formatting, missing semi colons, etc; no production code change
+- `refactor`: refactoring production code, ex. renaming a variable
+- `test`: adding missing tests, refactoring tests; no production code change
+- `chore`: updating grunt tasks etc.; no production code change
+
+Scopes (optional): App, lib, server component name, ex. hogar-app, core, accounts-server
+
+Example:
+
+```text
+feat(hogar-app): new footer component added for mobile
+^--^  ^------------^
+|     |
+|     +-> Summary of the changes
+|
++-------> Type: chore, docs, feat, fix, refactor, style, or test
+```
